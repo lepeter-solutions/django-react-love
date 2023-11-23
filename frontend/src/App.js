@@ -28,7 +28,7 @@ class App extends React.Component {
           <div key = {id}>
             <h2>{output.szolgaltatas}</h2>
             <h2>{output.arak}</h2>
-
+            
           </div>
         ))}
       </div>
