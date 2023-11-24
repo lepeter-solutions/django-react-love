@@ -6,9 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   
   return (
-    <div className = "container-fluid">
+    <div className = "container">
       <GetHeader />
-      <Slider />
+      <div className = "container-fluid">
+        <Slider />
+      </div>
       <GetPriceTable />
     </div>
   );
