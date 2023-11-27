@@ -21,5 +21,10 @@ from django.conf.urls.static import static
 from webpage.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', ReactView.as_view(), name="main")
+    path('prices/', ReactView.as_view(), name="main"),
+    path('sliderslide/', SliderSlideView.as_view(), name="SliderSlide"),
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

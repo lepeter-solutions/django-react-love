@@ -16,3 +16,13 @@ class ReactView(APIView):
         if serializerLocal.is_valid(raise_exception=True):
             serializerLocal.save()
             return Response(serializerLocal.data, status=status.HTTP_200_OK)
+        
+class SliderSlideView(APIView):
+    def get(self, request):
+        output = [ {"title": output.title, "description": output.description, "img": output.img} for output in SliderSlide.objects.all()]
+        return Response(output)
+    def post(self, request):
+        serializerLocal = SliderSlideSerializer(data=request.data)
+        if serializerLocal.is_valid(raise_exception=True):
+            serializerLocal.save()
+            return Response(serializerLocal.data, status=status.HTTP_200_OK)
