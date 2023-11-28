@@ -4,9 +4,9 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
-import pc1 from './images/pc1.jpg';
-import pc2 from './images/pc2.jpg';
-import pc3 from './images/pc3.jpg';
+import pc1 from '../images/pc1.jpg';
+import pc2 from '../images/pc2.jpg';
+import pc3 from '../images/pc3.jpg';
 import MDBContainer from 'mdbreact'
 
 function Slider() {
@@ -25,7 +25,7 @@ function Slider() {
                     <Carousel.Item>
                         <Image src = {pc1} fluid  />
                         <Carousel.Caption>
-                        <h3>First slide label</h3>
+                        <h3>Build your dream computer! </h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
