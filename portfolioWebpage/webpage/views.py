@@ -19,8 +19,9 @@ class ReactView(APIView):
         
 class SliderSlideView(APIView):
     def get(self, request):
-        output = [ {"title": output.title, "description": output.description, "img": output.img} for output in SliderSlide.objects.all()]
-        return Response(output)
+        posts = SliderSlide.objects.all()
+        serializer = SliderSlideSerializer(posts, many=True)
+        return Response(serializer.data)
     def post(self, request):
         serializerLocal = SliderSlideSerializer(data=request.data)
         if serializerLocal.is_valid(raise_exception=True):

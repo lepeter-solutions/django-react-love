@@ -1,9 +1,9 @@
 function GetHeader(){
     return (
-    <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <header className="d-flex bg-primary flex-wrap justify-content-center py-3 ">
         <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
           <svg className="bi me-2" width="40" height="32"><use xlinkHref="#bootstrap"></use></svg>
-          <span className="fs-4">Simple header</span>
+          <span className="fs-4">Danube Computers Europe</span>
         </a>
   
         <ul className="nav nav-pills">

@@ -21,4 +21,4 @@ class SliderSlide(models.Model):
     description = models.CharField(max_length=200)
     img = models.ImageField(upload_to='images/')
     def __str__(self):
-        return f"{self.title,self.description}"
+        return f"{self.title,self.description, self.img}"

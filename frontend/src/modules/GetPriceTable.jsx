@@ -1,12 +1,14 @@
 import axios from 'axios';
 import React, { useState, useEffect } from "react";
+import urlToApi from '../Variables.jsx';
+
 function GetPriceTable(){
     const [data, setData] = useState([]);
   
     // Function to fetch data using Axios
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/prices");
+        const response = await axios.get(urlToApi + "/prices/");
         setData(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
