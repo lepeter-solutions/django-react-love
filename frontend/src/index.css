@@ -1,15 +1,72 @@
 #root {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(60,49,45);
+  font-family: Raleway;
+  font-size: 1em;
+  font-weight: bolder;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 #mainwrapper{
-  background-color: white;
  
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.header-btn {
+  border: 2px solid rgb(204,106,74);
+  background: transparent;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgb(204,106,74);
+  text-decoration: none;
+}
+
+#header{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#header-name{
+  color: white;
+  font-family: Raleway;
+}
+.main-bg-color{
+  background-color: rgb(244, 234, 225);
+}
+.secondary-bg-color{
+  background-color: rgb(60,49,45);
+}
+
+.bg-primary-new{
+  background-color: rgb(12, 46, 55);
+}
+
+.third-bg-color{
+  background-color: rgb(204,106,74);
+}
+.fourth-bg-color{
+  background-color: rgb(224,171,67);
+}
+.fifth-bg-color{
+  background-color: rgb(65,99,70);
+}
+
+
+
+
+.main-text-color{
+  color: rgb(244, 234, 225);
+}
+.secondary-text-color{
+  color: rgb(60,49,45);
+}
+
+.text-primary-new{
+  color: rgb(12, 46, 55);
+}
+
+.third-text-color{
+  color: rgb(204,106,74);
+}
+.fourth-text-color{
+  color: rgb(224,171,67);
+}
+.fifth-text-color{
+  background-color: rgb(65,99,70);
 }

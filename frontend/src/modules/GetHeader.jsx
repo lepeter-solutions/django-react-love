@@ -1,17 +1,17 @@
 function GetHeader(){
     return (
-    <header className="d-flex bg-primary flex-wrap justify-content-center py-3 ">
+    <header id = "header" className="d-flex bg-primary-new flex-wrap justify-content-center py-3 ">
         <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
           <svg className="bi me-2" width="40" height="32"><use xlinkHref="#bootstrap"></use></svg>
-          <span className="fs-4">Danube Computers Europe</span>
+          <span className="fs-4" id = "header-name"> Danube Computers Europe</span>
         </a>
   
-        <ul className="nav nav-pills">
-          <li className="nav-item"><a href="#" className="nav-link active" aria-current="page">Home</a></li>
-          <li className="nav-item"><a href="#" className="nav-link">Features</a></li>
-          <li className="nav-item"><a href="#" className="nav-link">Pricing</a></li>
-          <li className="nav-item"><a href="#" className="nav-link">FAQs</a></li>
-          <li className="nav-item"><a href="#" className="nav-link">About</a></li>
+        <ul className="nav nav-pills pt-1">
+          <li className="nav-item"><a href="#" className="third-text-color header-btn m-1 p-3" aria-current="page">Home</a></li>
+          <li className="nav-item"><a href="#" className="third-text-color header-btn m-1 p-3">Features</a></li>
+          <li className="nav-item"><a href="#" className="third-text-color header-btn m-1 p-3">Pricing</a></li>
+          <li className="nav-item"><a href="#" className="third-text-color header-btn m-1 p-3">FAQs</a></li>
+          <li className="nav-item"><a href="#" className="third-text-color header-btn m-1 p-3">About</a></li>
         </ul>
       </header>
     );

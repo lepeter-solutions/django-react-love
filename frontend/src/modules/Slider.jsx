@@ -44,10 +44,10 @@ function Slider() {
                     <Carousel activeIndex={index} onSelect={handleSelect} >
                     {data.map((post) => (
                     <Carousel.Item key = {post.title}>
-                        <Image src = {url + post.img} fluid  />
+                        <Image src = {url + post.img} fluid className = "rounded" />
                         <Carousel.Caption>
                         <h3>{post.title} </h3>
-                        <p>{post.description}</p>
+                        <p><b>{post.description}</b></p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     ))}
