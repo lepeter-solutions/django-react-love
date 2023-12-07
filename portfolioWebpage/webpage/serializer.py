@@ -10,3 +10,8 @@ class SliderSlideSerializer(serializers.ModelSerializer):
     class Meta:
         model = SliderSlide
         fields = ['title', 'description', 'img']
+
+class ImgCardsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ImgCards
+        fields = ['title', 'description', 'img']

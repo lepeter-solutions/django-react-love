@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('prices/', ReactView.as_view(), name="main"),
     path('sliderslide/', SliderSlideView.as_view(), name="SliderSlide"),
+    path('imgcards/', ImgCardsView.as_view(), name="ImgCards"),
 ]
 
 
