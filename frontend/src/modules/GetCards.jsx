@@ -29,9 +29,11 @@ function GetCards() {
       fontSize: '2.5rem',
     }
   return (
-    
+    <div className = "container-fluid">
+    <div className = "row">
     <CardGroup className = "p-5 bg-transparent">
        {data.map((post) => (
+            <div className = "col col-12 col-sm-12 col-md-6 col-lg-4">
             <Card className = "p-1 bg-transparent border-0">
             <Card.Img style = {{borderRadius: "50px"}} className = "p-1 bg-transparent border-0" variant="top" src={urlToApi + post.img} />
             <Card.Body>
@@ -42,8 +44,11 @@ function GetCards() {
             </Card.Body>
             
           </Card>
+          </div>
           ))}
     </CardGroup>
+    </div>
+    </div>
   );
 }
 

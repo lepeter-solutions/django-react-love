@@ -14,9 +14,9 @@ function App() {
   
   return (
     <div>
-    
-    <div id = "mainwrapper" className = "container main-bg-color p-0">
     <div className = "container-fluid p-0"><GetHeader /></div>
+    <div id = "mainwrapper" className = "container main-bg-color p-0">
+    
     
       <div className = "container-fluid mb-4 p-4">
         <Slider />

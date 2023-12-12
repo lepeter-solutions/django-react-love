@@ -35,6 +35,10 @@ function Slider() {
     useEffect(() => {
       fetchData();
     }, []);
+    const titleStyle = {
+      fontFamily: 'Bebas Neue',
+      fontSize: '2.5rem',
+    }
   
   return (
     
@@ -46,7 +50,7 @@ function Slider() {
                     <Carousel.Item key = {post.title}>
                         <Image src = {url + post.img} fluid className = "rounded" />
                         <Carousel.Caption>
-                        <h3>{post.title} </h3>
+                        <h3 style = {titleStyle}>{post.title} </h3>
                         <p><b>{post.description}</b></p>
                         </Carousel.Caption>
                     </Carousel.Item>
