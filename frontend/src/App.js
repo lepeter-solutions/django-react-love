@@ -7,6 +7,7 @@ import MainPageText from './modules/MainPageText';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GetCards from './modules/GetCards';
+import PageInfos from './modules/PageInfos';
 
 
 
@@ -21,10 +22,11 @@ function App() {
       <div className = "container-fluid mb-4 p-4">
         <Slider />
       </div>
-      <MainPageText />
-      <GetCards />
-      <GetPriceTable />
-    </div>
+        <MainPageText />
+        <GetCards />
+        <PageInfos />
+        <GetPriceTable />
+      </div>
     </div>
   );
 };
